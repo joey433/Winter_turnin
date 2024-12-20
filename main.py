@@ -1,0 +1,246 @@
+import turtle
+
+screen = turtle.Screen()
+screen.screensize(1000,1000)
+screen.bgcolor('lightsteelblue')
+t = turtle.Turtle()
+t.speed(0)
+t_ground = turtle.Turtle()
+t_ground.penup()
+t_ground.pencolor('Snow1')
+t_ground.fillcolor('Snow1')
+t_ground.speed(0)
+t_ground.goto(-1000,-100)
+t_ground.pendown()
+t_ground.begin_fill()
+t_ground.goto(1000,-100)
+t_ground.goto(1000,-1000)
+t_ground.goto(-1000,-1000)
+t_ground.goto(-1000,-100)
+t_ground.end_fill()
+t.penup()
+t.goto(-300,-200)
+t.pensize(10)
+t.pendown()
+y = -200
+x = -300
+for i in range(16):
+    t.penup()
+    t.goto(x,y)
+    if i%2==0:
+        t.pencolor('brown')
+        up=10
+    else:
+        t.pencolor('black')
+        up=5
+    t.pendown()
+    t.forward(150)
+    y+=up
+for i in range(5):
+    t.penup()
+
+    if i % 2 == 0:
+        t.pencolor('black')
+        up = 10
+        move = 150-20*i-20
+        t.goto(x + 20 * i, y)
+
+    else:
+        t.pencolor('brown')
+        up = 5
+        t.goto(x + 20 * (i-1), y)
+        # move = 150 - 20 * 2 * i
+    t.pendown()
+    t.forward(move)
+    y += up
+
+t.pensize(2)
+t.penup()
+t.goto(-20,-200)
+t.pendown()
+t.circle(40)
+
+t.fillcolor('Snow1')
+t.begin_fill()
+t.penup()
+t.goto(-20,-125)
+t.pendown()
+t.circle(30)
+
+
+
+t.penup()
+t.goto(-20,-65)
+t.pendown()
+t.circle(20)
+t.end_fill()
+
+
+t.penup()
+t.pensize(15)
+t.pencolor('brown')
+t.goto(150,0)
+t.pendown()
+t.goto(150,-200)
+
+t.pensize(1)
+t.penup()
+
+
+t.fillcolor('DarkGreen')
+t.pencolor('DarkGreen')
+t.goto(100,-150)
+t.pendown()
+t.begin_fill()
+t.goto(200,-150)
+t.goto(150,50)
+t.goto(100,-150)
+t.end_fill()
+t.penup()
+
+
+t.goto(120,-140)
+t.fillcolor('red')
+t.begin_fill()
+t.pencolor('red')
+t.pendown()
+t.circle(5)
+t.end_fill()
+
+t.penup()
+t.goto(140,-110)
+
+t.fillcolor('blue')
+t.begin_fill()
+t.pencolor('blue')
+t.pendown()
+t.circle(5)
+t.end_fill()
+
+
+t.penup()
+t.goto(125,-90)
+t.pendown()
+t.pencolor('silver')
+t.fillcolor('silver')
+t.begin_fill()
+t.circle(5)
+t.end_fill()
+t.penup()
+
+t.penup()
+t.goto(150,-80)
+t.pendown()
+t.pencolor('silver')
+t.fillcolor('silver')
+t.begin_fill()
+t.circle(5)
+t.end_fill()
+t.penup()
+
+t.goto(170,-50)
+t.fillcolor('red')
+t.begin_fill()
+t.pencolor('red')
+t.pendown()
+t.circle(5)
+t.end_fill()
+t.penup()
+
+t.goto(170,-90)
+t.fillcolor('red')
+t.begin_fill()
+t.pencolor('red')
+t.pendown()
+t.circle(5)
+t.end_fill()
+t.penup()
+
+t.goto(-20,-120)
+t.pendown()
+t.pencolor('black')
+t.dot(10)
+t.penup()
+t.goto(-20,-100)
+t.pendown()
+t.pencolor('black')
+t.dot(10)
+t.penup()
+t.goto(-20,-80)
+t.pendown()
+t.pencolor('black')
+t.dot(10)
+
+t.penup()
+t.goto(-28,-40)
+t.pendown()
+t.dot(5)
+
+t.penup()
+t.goto(-13,-40)
+t.pendown()
+t.dot(5)
+t.penup()
+
+t.goto(-50,-90)
+t.pensize(5)
+t.pencolor('brown')
+t.pendown()
+t.goto(-80,-60)
+t.penup()
+t.goto(10,-90)
+t.pendown()
+t.goto(30,-60)
+t.penup()
+
+t.goto(200,-200)
+t.pensize(2)
+t.pendown()
+t.pencolor('black')
+t.fillcolor('blue')
+t.begin_fill()
+t.goto(250,-200)
+t.goto(250,-153)
+t.goto(200,-153)
+t.goto(200,-200)
+t.end_fill()
+t.goto(225,-200)
+t.pensize(8)
+t.goto(225,-153)
+t.penup()
+t.goto(280,290)
+t.pendown()
+t.pensize(0)
+t.fillcolor('Snow1')
+t.begin_fill()
+t.circle(80)
+t.penup()
+t.goto(180,290)
+t.pendown()
+t.circle(150)
+t.penup()
+t.goto(20,290)
+t.pendown()
+t.circle(150)
+t.penup()
+t.goto(-90,290)
+t.pendown()
+t.circle(150)
+t.penup()
+t.goto(-180,290)
+t.pendown()
+t.circle(150)
+t.penup()
+t.goto(-300,290)
+t.pendown()
+t.circle(150)
+t.penup()
+t.goto(-350,290)
+t.pendown()
+t.circle(150)
+
+t.end_fill()
+#this is the last line of code
+turtle.done()
+
+
